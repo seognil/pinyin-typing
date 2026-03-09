@@ -1,0 +1,203 @@
+{
+  "version": 1,
+  "generated_at": "2026-03-09T03:25:35+00:00",
+  "sources": [
+    {
+      "source": "hanzi-words-cycb",
+      "repo": "zispace/hanzi-words-cycb",
+      "license": "unknown",
+      "filename": "现代汉语常用词表（第2版）.tsv",
+      "url": "https://raw.githubusercontent.com/zispace/hanzi-words-cycb/main/%E7%8E%B0%E4%BB%A3%E6%B1%89%E8%AF%AD%E5%B8%B8%E7%94%A8%E8%AF%8D%E8%A1%A8%EF%BC%88%E7%AC%AC2%E7%89%88%EF%BC%89.tsv",
+      "size": 3191281,
+      "path": ".source/hanzi-words-cycb/现代汉语常用词表（第2版）.tsv"
+    },
+    {
+      "source": "general-standard-chars",
+      "repo": "iDvel/The-Table-of-General-Standard-Chinese-Characters",
+      "license": "unknown",
+      "filename": "1-8105纯汉字（按顺序排列）.txt",
+      "url": "https://raw.githubusercontent.com/iDvel/The-Table-of-General-Standard-Chinese-Characters/master/1-8105%E7%BA%AF%E6%B1%89%E5%AD%97%EF%BC%88%E6%8C%89%E9%A1%BA%E5%BA%8F%E6%8E%92%E5%88%97%EF%BC%89.txt",
+      "size": 32616,
+      "path": ".source/general-standard-chars/1-8105纯汉字（按顺序排列）.txt"
+    },
+    {
+      "source": "general-standard-chars",
+      "repo": "iDvel/The-Table-of-General-Standard-Chinese-Characters",
+      "license": "unknown",
+      "filename": "3-单个汉字+发音（带声调）.txt",
+      "url": "https://raw.githubusercontent.com/iDvel/The-Table-of-General-Standard-Chinese-Characters/master/3-%E5%8D%95%E4%B8%AA%E6%B1%89%E5%AD%97%2B%E5%8F%91%E9%9F%B3%EF%BC%88%E5%B8%A6%E5%A3%B0%E8%B0%83%EF%BC%89.txt",
+      "size": 79832,
+      "path": ".source/general-standard-chars/3-单个汉字+发音（带声调）.txt"
+    },
+    {
+      "source": "python-pinyin",
+      "repo": "mozillazg/python-pinyin",
+      "license": "MIT",
+      "filename": "phrases_dict.json",
+      "url": "https://raw.githubusercontent.com/mozillazg/python-pinyin/master/pypinyin/phrases_dict.json",
+      "size": 2545585,
+      "path": ".source/python-pinyin/phrases_dict.json"
+    }
+  ],
+  "totals": {
+    "chars": 8105,
+    "base": 53382,
+    "extend": 23357,
+    "shards": 17
+  },
+  "shards": [
+    {
+      "path": "data/shards/chars.part-001.tsv",
+      "tier": "chars",
+      "len": null,
+      "rows": 8105,
+      "bytes": 186129,
+      "fr_min": 1,
+      "fr_max": 8105
+    },
+    {
+      "path": "data/shards/base-len2.part-001.tsv",
+      "tier": "base",
+      "len": 2,
+      "rows": 6977,
+      "bytes": 262144,
+      "fr_min": 20,
+      "fr_max": 9875
+    },
+    {
+      "path": "data/shards/base-len2.part-002.tsv",
+      "tier": "base",
+      "len": 2,
+      "rows": 6764,
+      "bytes": 262133,
+      "fr_min": 9877,
+      "fr_max": 18281
+    },
+    {
+      "path": "data/shards/base-len2.part-003.tsv",
+      "tier": "base",
+      "len": 2,
+      "rows": 6757,
+      "bytes": 262100,
+      "fr_min": 18282,
+      "fr_max": 27178
+    },
+    {
+      "path": "data/shards/base-len2.part-004.tsv",
+      "tier": "base",
+      "len": 2,
+      "rows": 6747,
+      "bytes": 262139,
+      "fr_min": 27182,
+      "fr_max": 36741
+    },
+    {
+      "path": "data/shards/base-len2.part-005.tsv",
+      "tier": "base",
+      "len": 2,
+      "rows": 6736,
+      "bytes": 262127,
+      "fr_min": 36743,
+      "fr_max": 46805
+    },
+    {
+      "path": "data/shards/base-len2.part-006.tsv",
+      "tier": "base",
+      "len": 2,
+      "rows": 6490,
+      "bytes": 252075,
+      "fr_min": 46806,
+      "fr_max": 56788
+    },
+    {
+      "path": "data/shards/base-len3.part-001.tsv",
+      "tier": "base",
+      "len": 3,
+      "rows": 5078,
+      "bytes": 262142,
+      "fr_min": 410,
+      "fr_max": 47933
+    },
+    {
+      "path": "data/shards/base-len3.part-002.tsv",
+      "tier": "base",
+      "len": 3,
+      "rows": 1778,
+      "bytes": 92573,
+      "fr_min": 47951,
+      "fr_max": 56790
+    },
+    {
+      "path": "data/shards/base-len4.part-001.tsv",
+      "tier": "base",
+      "len": 4,
+      "rows": 4119,
+      "bytes": 262080,
+      "fr_min": 579,
+      "fr_max": 43395
+    },
+    {
+      "path": "data/shards/base-len4.part-002.tsv",
+      "tier": "base",
+      "len": 4,
+      "rows": 1936,
+      "bytes": 124097,
+      "fr_min": 43401,
+      "fr_max": 56765
+    },
+    {
+      "path": "data/shards/extend-len2.part-001.tsv",
+      "tier": "extend",
+      "len": 2,
+      "rows": 5408,
+      "bytes": 205403,
+      "fr_min": 11,
+      "fr_max": 47105
+    },
+    {
+      "path": "data/shards/extend-len3.part-001.tsv",
+      "tier": "extend",
+      "len": 3,
+      "rows": 1828,
+      "bytes": 91850,
+      "fr_min": 12,
+      "fr_max": 47080
+    },
+    {
+      "path": "data/shards/extend-len4.part-001.tsv",
+      "tier": "extend",
+      "len": 4,
+      "rows": 4199,
+      "bytes": 262121,
+      "fr_min": 1,
+      "fr_max": 12861
+    },
+    {
+      "path": "data/shards/extend-len4.part-002.tsv",
+      "tier": "extend",
+      "len": 4,
+      "rows": 4092,
+      "bytes": 262130,
+      "fr_min": 12863,
+      "fr_max": 25016
+    },
+    {
+      "path": "data/shards/extend-len4.part-003.tsv",
+      "tier": "extend",
+      "len": 4,
+      "rows": 4046,
+      "bytes": 262115,
+      "fr_min": 25018,
+      "fr_max": 37425
+    },
+    {
+      "path": "data/shards/extend-len4.part-004.tsv",
+      "tier": "extend",
+      "len": 4,
+      "rows": 3784,
+      "bytes": 248299,
+      "fr_min": 37430,
+      "fr_max": 47111
+    }
+  ]
+}
