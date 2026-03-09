@@ -28,7 +28,7 @@
 
 构建入口：
 
-1. `python3 -m scripts.build`
+1. `python3 -m scripts.build_data`
 
 构建流程分为六步：
 
