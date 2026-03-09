@@ -1,7 +1,16 @@
 {
   "version": 1,
-  "generated_at": "2026-03-09T03:25:35+00:00",
+  "generated_at": "2026-03-09T05:29:08+00:00",
   "sources": [
+    {
+      "source": "hanzi-words-cycb",
+      "repo": "zispace/hanzi-words-cycb",
+      "license": "unknown",
+      "filename": "义务教育常用词表（草案）.tsv",
+      "url": "https://raw.githubusercontent.com/zispace/hanzi-words-cycb/main/%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E5%B8%B8%E7%94%A8%E8%AF%8D%E8%A1%A8%EF%BC%88%E8%8D%89%E6%A1%88%EF%BC%89.tsv",
+      "size": 555126,
+      "path": ".source/hanzi-words-cycb/义务教育常用词表（草案）.tsv"
+    },
     {
       "source": "hanzi-words-cycb",
       "repo": "zispace/hanzi-words-cycb",
@@ -41,10 +50,59 @@
   ],
   "totals": {
     "chars": 8105,
-    "base": 53382,
-    "extend": 23357,
-    "shards": 17
+    "edu": 13427,
+    "modern": 40121,
+    "phrase": 23303,
+    "shards": 19
   },
+  "word_buckets": [
+    {
+      "id": "edu-1",
+      "tier": "edu",
+      "edu_level": 1,
+      "rows": 988,
+      "fr_start": 1,
+      "fr_end": 988
+    },
+    {
+      "id": "edu-2",
+      "tier": "edu",
+      "edu_level": 2,
+      "rows": 4111,
+      "fr_start": 989,
+      "fr_end": 5099
+    },
+    {
+      "id": "edu-3",
+      "tier": "edu",
+      "edu_level": 3,
+      "rows": 5102,
+      "fr_start": 5100,
+      "fr_end": 10201
+    },
+    {
+      "id": "edu-4",
+      "tier": "edu",
+      "edu_level": 4,
+      "rows": 3226,
+      "fr_start": 10202,
+      "fr_end": 13427
+    },
+    {
+      "id": "modern",
+      "tier": "modern",
+      "rows": 40121,
+      "fr_start": 13428,
+      "fr_end": 53548
+    },
+    {
+      "id": "phrase",
+      "tier": "phrase",
+      "rows": 23303,
+      "fr_start": 53549,
+      "fr_end": 76851
+    }
+  ],
   "shards": [
     {
       "path": "data/shards/chars.part-001.tsv",
@@ -56,148 +114,166 @@
       "fr_max": 8105
     },
     {
-      "path": "data/shards/base-len2.part-001.tsv",
-      "tier": "base",
+      "path": "data/shards/edu-len2.part-001.tsv",
+      "tier": "edu",
       "len": 2,
       "rows": 6977,
-      "bytes": 262144,
-      "fr_min": 20,
-      "fr_max": 9875
-    },
-    {
-      "path": "data/shards/base-len2.part-002.tsv",
-      "tier": "base",
-      "len": 2,
-      "rows": 6764,
-      "bytes": 262133,
-      "fr_min": 9877,
-      "fr_max": 18281
-    },
-    {
-      "path": "data/shards/base-len2.part-003.tsv",
-      "tier": "base",
-      "len": 2,
-      "rows": 6757,
-      "bytes": 262100,
-      "fr_min": 18282,
-      "fr_max": 27178
-    },
-    {
-      "path": "data/shards/base-len2.part-004.tsv",
-      "tier": "base",
-      "len": 2,
-      "rows": 6747,
-      "bytes": 262139,
-      "fr_min": 27182,
-      "fr_max": 36741
-    },
-    {
-      "path": "data/shards/base-len2.part-005.tsv",
-      "tier": "base",
-      "len": 2,
-      "rows": 6736,
-      "bytes": 262127,
-      "fr_min": 36743,
-      "fr_max": 46805
-    },
-    {
-      "path": "data/shards/base-len2.part-006.tsv",
-      "tier": "base",
-      "len": 2,
-      "rows": 6490,
-      "bytes": 252075,
-      "fr_min": 46806,
-      "fr_max": 56788
-    },
-    {
-      "path": "data/shards/base-len3.part-001.tsv",
-      "tier": "base",
-      "len": 3,
-      "rows": 5078,
-      "bytes": 262142,
-      "fr_min": 410,
-      "fr_max": 47933
-    },
-    {
-      "path": "data/shards/base-len3.part-002.tsv",
-      "tier": "base",
-      "len": 3,
-      "rows": 1778,
-      "bytes": 92573,
-      "fr_min": 47951,
-      "fr_max": 56790
-    },
-    {
-      "path": "data/shards/base-len4.part-001.tsv",
-      "tier": "base",
-      "len": 4,
-      "rows": 4119,
-      "bytes": 262080,
-      "fr_min": 579,
-      "fr_max": 43395
-    },
-    {
-      "path": "data/shards/base-len4.part-002.tsv",
-      "tier": "base",
-      "len": 4,
-      "rows": 1936,
-      "bytes": 124097,
-      "fr_min": 43401,
-      "fr_max": 56765
-    },
-    {
-      "path": "data/shards/extend-len2.part-001.tsv",
-      "tier": "extend",
-      "len": 2,
-      "rows": 5408,
-      "bytes": 205403,
-      "fr_min": 11,
-      "fr_max": 47105
-    },
-    {
-      "path": "data/shards/extend-len3.part-001.tsv",
-      "tier": "extend",
-      "len": 3,
-      "rows": 1828,
-      "bytes": 91850,
-      "fr_min": 12,
-      "fr_max": 47080
-    },
-    {
-      "path": "data/shards/extend-len4.part-001.tsv",
-      "tier": "extend",
-      "len": 4,
-      "rows": 4199,
-      "bytes": 262121,
+      "bytes": 262125,
       "fr_min": 1,
-      "fr_max": 12861
+      "fr_max": 7747
     },
     {
-      "path": "data/shards/extend-len4.part-002.tsv",
-      "tier": "extend",
+      "path": "data/shards/edu-len2.part-002.tsv",
+      "tier": "edu",
+      "len": 2,
+      "rows": 3457,
+      "bytes": 133440,
+      "fr_min": 7748,
+      "fr_max": 13425
+    },
+    {
+      "path": "data/shards/edu-len3.part-001.tsv",
+      "tier": "edu",
+      "len": 3,
+      "rows": 416,
+      "bytes": 20637,
+      "fr_min": 97,
+      "fr_max": 13422
+    },
+    {
+      "path": "data/shards/edu-len4.part-001.tsv",
+      "tier": "edu",
       "len": 4,
-      "rows": 4092,
-      "bytes": 262130,
-      "fr_min": 12863,
-      "fr_max": 25016
+      "rows": 2577,
+      "bytes": 164259,
+      "fr_min": 733,
+      "fr_max": 13427
     },
     {
-      "path": "data/shards/extend-len4.part-003.tsv",
-      "tier": "extend",
+      "path": "data/shards/modern-len2.part-001.tsv",
+      "tier": "modern",
+      "len": 2,
+      "rows": 6778,
+      "bytes": 262109,
+      "fr_min": 13428,
+      "fr_max": 21744
+    },
+    {
+      "path": "data/shards/modern-len2.part-002.tsv",
+      "tier": "modern",
+      "len": 2,
+      "rows": 6766,
+      "bytes": 262133,
+      "fr_min": 21745,
+      "fr_max": 30151
+    },
+    {
+      "path": "data/shards/modern-len2.part-003.tsv",
+      "tier": "modern",
+      "len": 2,
+      "rows": 6735,
+      "bytes": 262122,
+      "fr_min": 30152,
+      "fr_max": 39162
+    },
+    {
+      "path": "data/shards/modern-len2.part-004.tsv",
+      "tier": "modern",
+      "len": 2,
+      "rows": 6749,
+      "bytes": 262126,
+      "fr_min": 39165,
+      "fr_max": 48919
+    },
+    {
+      "path": "data/shards/modern-len2.part-005.tsv",
+      "tier": "modern",
+      "len": 2,
+      "rows": 3083,
+      "bytes": 119840,
+      "fr_min": 48920,
+      "fr_max": 53546
+    },
+    {
+      "path": "data/shards/modern-len3.part-001.tsv",
+      "tier": "modern",
+      "len": 3,
+      "rows": 5055,
+      "bytes": 262138,
+      "fr_min": 13440,
+      "fr_max": 46840
+    },
+    {
+      "path": "data/shards/modern-len3.part-002.tsv",
+      "tier": "modern",
+      "len": 3,
+      "rows": 1406,
+      "bytes": 73064,
+      "fr_min": 46841,
+      "fr_max": 53548
+    },
+    {
+      "path": "data/shards/modern-len4.part-001.tsv",
+      "tier": "modern",
+      "len": 4,
+      "rows": 3549,
+      "bytes": 225344,
+      "fr_min": 13494,
+      "fr_max": 53529
+    },
+    {
+      "path": "data/shards/phrase-len2.part-001.tsv",
+      "tier": "phrase",
+      "len": 2,
+      "rows": 5389,
+      "bytes": 205933,
+      "fr_min": 53554,
+      "fr_max": 76845
+    },
+    {
+      "path": "data/shards/phrase-len3.part-001.tsv",
+      "tier": "phrase",
+      "len": 3,
+      "rows": 1824,
+      "bytes": 92205,
+      "fr_min": 53555,
+      "fr_max": 76828
+    },
+    {
+      "path": "data/shards/phrase-len4.part-001.tsv",
+      "tier": "phrase",
+      "len": 4,
+      "rows": 4135,
+      "bytes": 262125,
+      "fr_min": 53549,
+      "fr_max": 59690
+    },
+    {
+      "path": "data/shards/phrase-len4.part-002.tsv",
+      "tier": "phrase",
+      "len": 4,
+      "rows": 4096,
+      "bytes": 262114,
+      "fr_min": 59691,
+      "fr_max": 65630
+    },
+    {
+      "path": "data/shards/phrase-len4.part-003.tsv",
+      "tier": "phrase",
       "len": 4,
       "rows": 4046,
-      "bytes": 262115,
-      "fr_min": 25018,
-      "fr_max": 37425
+      "bytes": 262122,
+      "fr_min": 65631,
+      "fr_max": 71617
     },
     {
-      "path": "data/shards/extend-len4.part-004.tsv",
-      "tier": "extend",
+      "path": "data/shards/phrase-len4.part-004.tsv",
+      "tier": "phrase",
       "len": 4,
-      "rows": 3784,
-      "bytes": 248299,
-      "fr_min": 37430,
-      "fr_max": 47111
+      "rows": 3813,
+      "bytes": 250269,
+      "fr_min": 71619,
+      "fr_max": 76851
     }
   ]
 }

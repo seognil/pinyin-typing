@@ -4,24 +4,23 @@ import json
 
 from .groups import (
     CHINESE_RE,
-    EXTEND_SOURCE_PATH,
+    PHRASE_SOURCE_PATH,
     WORD_LENGTHS,
     encode_groups,
     level_bitmap,
 )
 
 
-def build_extend(base_texts: set[str], char_levels: dict[str, int]) -> dict:
-    phrase_map = json.loads(EXTEND_SOURCE_PATH.read_text(encoding="utf-8"))
+def build_phrase(skip_texts: set[str], char_levels: dict[str, int]) -> dict:
+    phrase_map = json.loads(PHRASE_SOURCE_PATH.read_text(encoding="utf-8"))
     filters = {
         "invalid_text": 0,
         "invalid_pm": 0,
         "invalid_length": 0,
         "non_8105": 0,
-        "duplicate_by_base": 0,
+        "duplicate_by_previous": 0,
     }
     excludes = []
-
     rows = []
     seen_texts: set[str] = set()
     for row_index, (text, value) in enumerate(phrase_map.items(), start=1):
@@ -31,8 +30,8 @@ def build_extend(base_texts: set[str], char_levels: dict[str, int]) -> dict:
         if len(text) not in WORD_LENGTHS:
             filters["invalid_length"] += 1
             continue
-        if text in base_texts:
-            filters["duplicate_by_base"] += 1
+        if text in skip_texts:
+            filters["duplicate_by_previous"] += 1
             continue
         if any(char not in char_levels for char in text):
             filters["non_8105"] += 1
@@ -86,15 +85,16 @@ def build_extend(base_texts: set[str], char_levels: dict[str, int]) -> dict:
             {
                 "t": text,
                 "pm": " ".join(pm_list),
-                "fr": row_index,
+                "source_fr": row_index,
                 "g": encode_groups(pm_list),
                 "l": level_bitmap(text, char_levels),
             }
         )
 
-    rows.sort(key=lambda item: (item["fr"], item["t"]))
+    rows.sort(key=lambda item: (item["source_fr"], item["t"]))
     return {
         "rows": rows,
+        "texts": {row["t"] for row in rows},
         "stats": {
             "total": len(rows),
             "filters": filters,

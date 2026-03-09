@@ -89,7 +89,7 @@ def _flush_shard(
 
 
 def write_excludes(build_result: dict) -> None:
-    for tier in ("base", "extend"):
+    for tier in ("edu", "modern", "phrase"):
         rows = build_result[tier].get("exclude_rows", [])
         if not rows:
             continue
@@ -108,10 +108,12 @@ def write_manifest(
         "sources": source_manifest,
         "totals": {
             "chars": build_result["chars"]["stats"]["total"],
-            "base": build_result["base"]["stats"]["total"],
-            "extend": build_result["extend"]["stats"]["total"],
+            "edu": build_result["edu"]["stats"]["total"],
+            "modern": build_result["modern"]["stats"]["total"],
+            "phrase": build_result["phrase"]["stats"]["total"],
             "shards": len(shards),
         },
+        "word_buckets": build_result["word_buckets"],
         "shards": shards,
     }
     MANIFEST_PATH.write_text(

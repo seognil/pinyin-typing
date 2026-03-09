@@ -15,6 +15,7 @@ SOURCES = [
         "repo": "zispace/hanzi-words-cycb",
         "license": "unknown",
         "files": {
+            "义务教育常用词表（草案）.tsv": "https://raw.githubusercontent.com/zispace/hanzi-words-cycb/main/%E4%B9%89%E5%8A%A1%E6%95%99%E8%82%B2%E5%B8%B8%E7%94%A8%E8%AF%8D%E8%A1%A8%EF%BC%88%E8%8D%89%E6%A1%88%EF%BC%89.tsv",
             "现代汉语常用词表（第2版）.tsv": "https://raw.githubusercontent.com/zispace/hanzi-words-cycb/main/%E7%8E%B0%E4%BB%A3%E6%B1%89%E8%AF%AD%E5%B8%B8%E7%94%A8%E8%AF%8D%E8%A1%A8%EF%BC%88%E7%AC%AC2%E7%89%88%EF%BC%89.tsv",
         },
     },

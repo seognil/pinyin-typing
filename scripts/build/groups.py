@@ -20,8 +20,9 @@ OFFICIAL_CHARS_PATH = (
 CHAR_PINYIN_PATH = (
     SOURCE_DIR / "general-standard-chars" / "3-单个汉字+发音（带声调）.txt"
 )
-BASE_MODERN_PATH = SOURCE_DIR / "hanzi-words-cycb" / "现代汉语常用词表（第2版）.tsv"
-EXTEND_SOURCE_PATH = SOURCE_DIR / "python-pinyin" / "phrases_dict.json"
+EDU_SOURCE_PATH = SOURCE_DIR / "hanzi-words-cycb" / "义务教育常用词表（草案）.tsv"
+MODERN_SOURCE_PATH = SOURCE_DIR / "hanzi-words-cycb" / "现代汉语常用词表（第2版）.tsv"
+PHRASE_SOURCE_PATH = SOURCE_DIR / "python-pinyin" / "phrases_dict.json"
 
 CHINESE_RE = re.compile(r"^[\u3400-\u4dbf\u4e00-\u9fff]+$")
 INITIALS = [
